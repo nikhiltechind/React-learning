@@ -12,7 +12,9 @@
   "version": "1.0.0",
   
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start" : "parcel index.html",
+    "build" : "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/nikhiltechind/React-learning/issues"
   },
-  "homepage": "https://github.com/nikhiltechind/React-learning#readme"
+  "homepage": "https://github.com/nikhiltechind/React-learning#readme",
+  "browsersList": [
+    "last 2 version"
+  ]
 }

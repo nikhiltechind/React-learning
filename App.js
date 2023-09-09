@@ -1,13 +1,25 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import HeaderComponent from "./src/Header";
 
 
 // const heading = React.createElement("h1",{id:"hii"},"hello world ");
 const jsxHeading = (
-<h1> className="head" 
+<h1 className="head"> 
     React learning series
 </h1>
 );
 
+const Component = () => (
+<div>
+<HeaderComponent/>
+<HeaderComponent/>
+<HeaderComponent/>
+<HeaderComponent/>
+</div>
+    
+    
+);
+ 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<Component/>);
