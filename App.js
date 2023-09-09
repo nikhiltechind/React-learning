@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import HeaderComponent from "./src/Header";
+import HeaderComponent from "./src/components/Header";
 
 
 // const heading = React.createElement("h1",{id:"hii"},"hello world ");
