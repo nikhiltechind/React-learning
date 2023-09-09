@@ -11,12 +11,10 @@ const jsxHeading = (
 );
 
 const Component = () => (
-<div>
+
 <HeaderComponent/>
-<HeaderComponent/>
-<HeaderComponent/>
-<HeaderComponent/>
-</div>
+
+
     
     
 );

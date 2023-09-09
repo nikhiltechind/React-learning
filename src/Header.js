@@ -1,4 +1,10 @@
 const Header = () => {
-    return <h1> React learning Functional Component</h1>
-};
+    return( 
+     <div className="NavBar"> 
+       <h1>hello</h1>
+       <h1>hello</h1>
+       <h1>hello</h1>
+       <h1>hello</h1>
+     </div>
+)};
 export default Header;
