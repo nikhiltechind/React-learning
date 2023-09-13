@@ -34,16 +34,47 @@
 .NavBar{
     display: flex;
     width: auto;
+    height: 100px;
     background-color: aqua;
     color: black;
     margin: 0px;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
+.navbtn{
+    display: flex;
+    justify-content: space-between;
+}
+.navv{
+    display: block;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
 body{
     padding: 0px;
     margin: 0;
-    margin-left: 5px;
+  
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.navlogo{
+    width:150px;
+    height:100px;
+    border-radius: 5px;
+}
+.shiCard{
+    height: 400px;
+    width: 200px;
+    background-color: rgba(174, 173, 163, 0.301);
+    padding: 4px;
+    margin:15px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 50px;
+    width: 100px;
 }

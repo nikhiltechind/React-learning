@@ -1,33 +1,29 @@
-import { restrauntList } from "../../constants";
-import { CDN_IMG_URL } from "../../constants";
+import { useEffect, useState } from "react";
+// import { restrauntList } from "../../constants";
+import Shimmer from "./Shimmer";
+import RestaurantCard from "./RestaurantCard";
 
-const BodyCard = (props) => {
-  const{resData} = props;
-  const {cloudinaryImageId,name,costForTwo,avgRating,cuisines,areaName}=resData.info;
- 
-
-  return   (
-    
-        <div className="resCard">
-         
-        <img src={CDN_IMG_URL+cloudinaryImageId} className="prodImg"></img>
-        <h3>{name} </h3>
-        <p> {cuisines.join(", ")}</p>
-        <p>{costForTwo}</p>
-        <p>{avgRating}</p>
-        <p> {areaName}</p>
-       
-        
-        </div>
-
-
-    );
-};
 const Body = () =>{
-return(<div className="bodyCard">
 
-{restrauntList.map((restraunt)=>(
-<BodyCard key={restraunt.info.id} resData={restraunt}/>
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+useEffect(()=>{
+fetchData();
+},[])
+
+const fetchData = async ()=>{
+  const data = await fetch ("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
+  const json = await data.json();
+  console.log(json);
+  
+  setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+ 
+  console.log(json);
+}
+return listOfRestaurants?.length===0 ? <Shimmer/> :
+(<div className="bodyCard">
+
+{listOfRestaurants.map((restraunt)=>(
+<RestaurantCard key={restraunt?.info?.id} resData={restraunt}/>
     ))}
 
 
