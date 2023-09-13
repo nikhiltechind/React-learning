@@ -1,7 +1,7 @@
-
+import { restrauntList } from "../../constants";
 import { CDN_IMG_URL } from "../../constants";
 
-const Body = (props) => {
+const BodyCard = (props) => {
   const{resData} = props;
   const {cloudinaryImageId,name,costForTwo,avgRating,cuisines,areaName}=resData.info;
  
@@ -23,4 +23,14 @@ const Body = (props) => {
 
     );
 };
+const Body = () =>{
+return(<div className="bodyCard">
+
+{restrauntList.map((restraunt)=>(
+<BodyCard key={restraunt.info.id} resData={restraunt}/>
+    ))}
+
+
+</div>)
+}
 export default Body;
