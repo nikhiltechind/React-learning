@@ -1,1 +1,1 @@
- <H1>   NAMASTE REACT </H1> 
+ <H1> React Learning series </H1> 
