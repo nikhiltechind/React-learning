@@ -33,7 +33,7 @@
 }
 .NavBar{
     display: flex;
-    width: auto;
+    width: 100%;
     height: 100px;
     background-color: aqua;
     color: black;
@@ -56,9 +56,7 @@ body{
     padding: 0px;
     margin: 0;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
 .navlogo{
     width:150px;
@@ -76,5 +74,5 @@ body{
 }
 button{
     height: 50px;
-    width: 100px;
+    width: auto;
 }
