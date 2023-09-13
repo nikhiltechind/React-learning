@@ -1,3 +1,49 @@
+.resCard{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height:fit-content;
+    background-color: rgba(174, 173, 163, 0.301);
+    color:black;
+    padding: 4px;
+    margin:15px;
+    justify-content: center;
+    align-items: center;
+    
+    /* box-shadow: 1px 1px 1px 1px #888888; */
+    border-radius: 5px;
+    flex-wrap: wrap;
+    
+}
+.resCard:hover{
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+
+.bodyCard{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.prodImg{
+    width:200px;
+    height:200px;
+}
 .NavBar{
-    display: inline-block;
+    display: flex;
+    width: auto;
+    background-color: aqua;
+    color: black;
+    margin: 0px;
+    justify-content: space-between;
+}
+body{
+    padding: 0px;
+    margin: 0;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

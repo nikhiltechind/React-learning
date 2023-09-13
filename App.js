@@ -1,19 +1,29 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import HeaderComponent from "./src/components/Header";
+import Body from "./src/components/Body";
+import Header  from "./src/components/Header";
+import {restrauntList} from "./constants";
 
 
-// const heading = React.createElement("h1",{id:"hii"},"hello world ");
 const jsxHeading = (
-<h1 className="head"> 
+<h3 className="head"> 
     React learning series
-</h1>
+</h3>
 );
 
 const Component = () => (
+   
+    <div>
+    <Header/>
+<div className="bodyCard">
 
-<HeaderComponent/>
+{restrauntList.map((restraunt)=>(
+<Body key={restraunt.info.id} resData={restraunt}/>
+    ))}
 
+
+</div>
+</div>
 
 );
  
