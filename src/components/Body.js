@@ -9,27 +9,9 @@ const Body = () =>{
   const [filteredList,setFilteredList] = useState([]);
 useEffect(()=>{
 fetchData();
-fetchCricket();
 },[])
 
-const fetchCricket = async () => {
-  const url = 'https://livescore6.p.rapidapi.com/matches/v2/list-live?Category=cricket';
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '0b5d8b28bfmsh0c22c17006ba670p13cf1ejsnebe7de77359e',
-      'X-RapidAPI-Host': 'livescore6.p.rapidapi.com'
-    }
-  };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
-}
 
 
 const fetchData = async ()=>{
