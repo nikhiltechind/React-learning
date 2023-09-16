@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [logInStatus,setLogInStatus] = useState("LOGIN");
@@ -7,9 +8,9 @@ const Header = () => {
   
       <div className="NavBar">
         <div className="navbtn">
-        <p className="navv"> Home</p>
-        <p className="navv"> About</p>
-        <p className="navv"> contact us</p>
+        <p className="navv" > < Link to = "/"> Home</Link> </p>
+        <p className="navv"> <Link to ="/about">about</Link> </p>
+        <p className="navv"> <Link to="/contact">Contact us</Link> </p>
         <p className="navv">🛒</p>
         <button onClick={()=>{
           if(logInStatus==="LOGIN")
