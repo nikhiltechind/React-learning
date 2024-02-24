@@ -1,7 +1,12 @@
+import UserClass from "./userClass";
+
 const About = () =>{
  return (<div>
-    asdfsadf
+    <UserClass name={"Nikhil Kumar"}/> 
+    <UserClass/>    
     <h1>About Pagee</h1>
+    <h1>About Pagee</h1>
+
 </div>)
 }
 export default About;
