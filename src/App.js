@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import Body from "./components/Body";
-import Header from "./components/header";
+import Header from "./components/HeaderComp";
 import { createBrowserRouter , RouterProvider, Outlet} from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
