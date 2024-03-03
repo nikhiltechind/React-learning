@@ -8,11 +8,6 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 
-// const jsxHeading = (
-// <h3 className="head"> 
-//     React learning series
-// </h3>
-// );
 
 
 const Component = () => (

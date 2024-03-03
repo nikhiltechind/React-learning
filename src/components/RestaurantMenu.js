@@ -15,9 +15,9 @@ const RestaurantMenu = ()=>{
           const json = await response.json();
 
       // Set restaurant data
-      const Data = await json?.data;
-       console.log(Data)
-     setresInfo(Data)
+      const data = await json?.data;
+       console.log(data)
+     setresInfo(data)
          
      }
      if(resInfo===null) return <Shimmer/>
@@ -31,7 +31,7 @@ const RestaurantMenu = ()=>{
             <h3>{costForTwoMessage}</h3>
             <ul> 
                 {itemCards.map((item)=>
-                <li key={item?.card?.info?.id}>{item?.card?.info?.name} -{"  Rs "} {item?.card?.info?.price/100 || item?.card?.info?.defaultPrice/100}</li>)} 
+                <li key={item?.card?.info?.id}>{item?.card?.info?.name} - {"  Rs "} {item?.card?.info?.price/100 || item?.card?.info?.defaultPrice/100}</li>)} 
                 
                 </ul>
         </div>
